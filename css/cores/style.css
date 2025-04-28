@@ -1,0 +1,12 @@
+h1 {
+    background-color: orange;
+    color: white;
+    border: 2px solid orangered;
+    padding: 20px;
+}
+
+p {
+    background-color: gray;
+    padding: 20px;
+    border: 2px solid black;
+}

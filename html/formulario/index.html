@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!--  
+            action="processa.html" -- (faz o processamento dos dados) 
+            method="post"  -- (salva os dados anteriores sem exibir dados sensiveis na url)
+            method="get" -- (exibe dados sensiveis na url)
+            name="nome da chave" | value="valor da chave" -- 'atributo' => placeholder (tint de texto)
+        
+        -->
+        <form action="processa.html" method="post">
+            <fieldset>
+                <legend>legenda</legend>
+                <label>oioihou</label>
+                
+                
+
+                <input list="list">
+                <datalist id="list">
+                    <option>Rj</option>
+                    <option>Sp</option>
+                </datalist><br>
+
+                <input type="file">
+            </fieldset>
+        </form>
+
+        <form method="get">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Insira seu nome" id="nome">
+
+            <input type="submit"><br>
+            <input type="file"><br><br>
+
+            <input type="radio" name="genero" value="masculino" id="genero"> 
+            <label for="genero">Masculino</label>
+
+            <input type="radio" name="genero" value="feminino" id="feminino"> 
+            <label for="feminino">Feminino</label>
+
+            <select name="estados">
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+            </select>
+        </form>
+        
+    </body>
+</html>
