@@ -1,0 +1,10 @@
+h1 {
+    /* border-width: 2px;
+    border-color: salmon;
+    border-style: groove; */
+    
+    border-width: 10px 8px 3px 6px;
+    border-color: salmon;
+    border-style: groove;
+
+}
