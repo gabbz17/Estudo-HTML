@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+header {
+    display: flex;
+    padding: 40px;
+    
+    img {
+        margin-left: 100px;
+        width: 150px;
+        height: 100px;
+    }
+
+    ul {
+        margin-top: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 300px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    li {
+        width: 170px;
+    }
+
+    label:hover {
+        cursor: pointer;
+        color: #ffffff;
+        transition: .3s;
+    }
+
+    input {
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 170px;
+        height: 57px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    input:hover {
+        transition: .3s;
+        background-color: #3A3A3A;
+    }
+}
+
+main {
+    display: flex;
+
+    img {
+        width: 700px;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFA500;
+        font-size: 60px;
+    }
+
+    label {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+        font-size:25px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #FFA500;
+        color: white;
+        border: none;
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    button:hover {
+        transition: .3s;
+        background-color: #D68904;
+    }
+
+    span {
+        margin-left: 200px;
+    }
+
+    #txt {
+        margin-top: 100px;
+    }
+
+    p {
+        border-radius: 18px;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        width: 350px;
+        height: 30px;
+        background-color: #D9D9D9;
+        margin-left: 200px;
+    }
+}
+
+footer {
+    padding-left: 35px;
+
+    #voltar {
+        cursor: pointer;
+        width: 40px;
+    }
+
+
+    #avancar {
+        cursor: pointer;
+        margin-left: 92%;
+        width: 40px;
+    }
+}

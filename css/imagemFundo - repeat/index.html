@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            .caixa {
+                text-align: center;
+                color: white;
+                height: 600px;
+                width: 600px;
+                background-color: aqua;
+                background-image: url('img/image.png');
+
+                /*
+                background-repeat: é repetida na horizontal e na vertical;
+                background-repeat: repeat-x; é repetida na horizontal
+                background-repeat: repeat-y; é repetida na vertical
+                background-repeat: no-repeat; não repete
+                */
+                background-repeat: no-repeat;
+
+                /*
+                background-attachment: fixed; imagem ficará fixa na tela
+                background-attachment: scrool; imagem rolará na tela
+                */
+                background-attachment: scroll;
+
+                /*
+                Ex: background-position: horizontal vertical; 
+                horizontal: left, center, right
+                vertical: top, center, bottom
+                background-position: center top; 
+                */
+                background-position: center top;
+                
+                /*
+                Todos esses atributos podem ser definidos de uma única forma: 
+                background: cor, imagem, repeat, attachment, position;
+                */
+
+                background: aqua
+                            url('img/image.png')
+                            no-repeat
+                            scroll
+                            left top;
+                            
+            }
+
+            
+
+            
+
+        </style>
+    </head>
+    <body>
+
+        <div class="caixa">
+            <p>gatinho fofo</p>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        
+    </body>
+</html>

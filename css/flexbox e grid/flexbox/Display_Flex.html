@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Flex</title>
+
+        <style>
+
+            /*
+                    AULÃO DO CARALHO
+
+                row, column, row-reverse
+                flex-direction: row;  atibui as informações do contêiner em uma linha == display: flex;
+                flex-direction: column;  atibui as informações do contêiner em blocos (um em baixo do outro)
+                flex-direction: column-reverse || row-reverse;  mostra as informações ao contrário (de baixo para cima, ou do direita para a esquerda)
+
+
+                flex-wrap: nowrap;   não empacota as informações no contêiner, possui espaço já definido ( |casa casa casa ca|sa )
+                flex-wrap: wrap;   empacota as informações, fazendo com que caiba dentro tudo dentro do contêiner ( |casa casa casa | )
+                                                                                                                    |      casa     |         
+
+                'Usado com o nowrap'
+                overflow-x(horizontal): scroll;   possibilita a rolagem lateral do contêiner, onde carrega dados e exibe horizontalmente
+                overflow-x(horizontal): hidden;   não possibilita a rolagem lateral do contêiner, ele não exibe o que ficar fora do contêiner
+ 
+                flex-flow: column wrap;   junção de 'flex-direction' com 'flex-wrap'
+            */
+
+            body {
+                background: linear-gradient(to right, black, white);
+                background-color: black;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            .conteiner-flex {
+                overflow-x: scroll;
+                flex-wrap: nowrap;
+                width: 180px;
+                border: 4px solid red;
+                display: flex;
+            }
+            
+            .conteiner-flex > div { /*Todas as div que estiver na classe serão modificadas  (Todas as div que pertence ao conteiner-flex)*/
+                color: white;
+                padding: 2px;
+                margin: 4px;
+                border: 4px solid white;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Display Flex</h1>
+
+        <div class="conteiner-flex">
+
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+            <div>05</div>
+            <div>06</div>
+            <div>07</div>
+            <div>08</div>
+
+        </div>
+        
+    </body>
+</html>

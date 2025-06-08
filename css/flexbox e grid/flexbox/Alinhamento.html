@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            /*
+                justify-content -> alinhamneto 
+
+            justify-content: start;  é ajustado no início da tela
+            justify-content: end;  é ajustado no final da tela
+            justify-content: center;  é ajustado no centro da tela
+            justify-content: space-around;  fica distribuido com espaço entre e por fora
+            justify-content: space-between;  fica distribuido somente com espaço entre
+            justify-content: space-evenly;  fica distribuido com espaço entre e por fora maior
+
+            
+            INTERESSANTE
+
+            ele alem de se ajustar horizontalmente, tembém funciona veticalmente
+            para isso, terá que definir  o 'flex-direction: column;' e 'display: flex;'
+            isso significa que o alinhamento será vertical devido ao flex-direction
+
+            justify-content: flex-end;
+            justify-content: flex-start;
+
+            */
+
+            body {
+                color: white;
+                background-color: black;
+            }
+            .conteiner-flex {
+                height: 180px;
+                border: 2px solid red;
+                display: flex;
+                flex-direction: row;
+
+                /*Alinha itens pela horizontal, eixo x*/
+                justify-content: center;
+                /*Alinha itens pela vertical, eixo y*/
+                align-items: center;
+            }
+            
+            .conteiner-flex > div{
+                margin: 5px;
+                padding: 5px;
+                border: 4px solid white;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Display Flex</h1>
+
+        <div class="conteiner-flex">
+
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+
+        </div>
+        
+    </body>
+</html>

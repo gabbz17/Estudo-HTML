@@ -85,7 +85,7 @@ main {
             width: 175px;
             height: 51px;
             font-size: 20px;
-            border-color: white;
+            border: none;
             background-color: #34C759;
             color: white;
         }
@@ -100,7 +100,7 @@ main {
             width: 200px;
             height: 51px;
             font-size: 20px;
-            border-color: white;
+            border: none;
             background: linear-gradient(to right, #F695F0, #E54C4C, #EE84F8, #E8DF81);
             color: white;
         }
@@ -115,7 +115,7 @@ main {
             width: 150px;
             height: 51px;
             font-size: 20px;
-            border-color: lightskyblue;
+            border: none;
             background-color: #03a9f4;
             color: white;
         }
@@ -134,7 +134,7 @@ main {
 }
 
 article {
-    margin: 30px;
+    margin-top: 30px;
 
     h2 {
         font-family: Arial, Helvetica, sans-serif;
@@ -143,5 +143,7 @@ article {
 
     #viagens {
         background-color: orange;
+        height: 200px;
+        border-radius: 20px;
     }
 }
