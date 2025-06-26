@@ -47,6 +47,7 @@ header {
 
 main {
     display: flex;
+    justify-content: center;
 
     span {
         margin-top: 60px;
@@ -54,7 +55,6 @@ main {
         p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
-            margin-left: 240px;
             width: 500px;
             text-align: center;
         }
@@ -71,14 +71,14 @@ main {
             cursor: pointer;
         }
 
-        button {
-            border-radius: 10px;
-            padding: 5px;
-            margin-left: 30px;
+        #buttons {
+            margin-right: 40px;
         }
 
-        #buttons {
-            margin-left: 150px;
+        button {
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 5px;
         }
 
         #whats {
@@ -129,12 +129,24 @@ main {
 
     video {
         width: 500px;
-        margin-left: 80px;
     }
 }
 
 article {
     margin-top: 80px;
+
+    img {
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    /* SELECIONA A DIV DE ONDE ESTIVER AS IMAGENS E ADICIONA O EFEITO DE CINZA NO QUE NAO ESTIVER SELECIONADO */
+    .viagem:hover > :not(:hover) {
+        transition: .5s;
+        filter: grayscale(100%);
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
 
     .seta {
         width: 30px;
@@ -161,13 +173,12 @@ article {
         align-items: center;
         display: flex;
         justify-content: space-between;
-        background-color: orange;
+        background-color: #FF7F00;
         height: 250px;
         border-radius: 20px;
     }
 
     #ssa {
-        
         width: 300px;
     }
 
@@ -178,4 +189,35 @@ article {
     #praia {
         width: 277px;
     }
+}
+
+aside {
+    margin: 20px;
+    color: white;
+
+    #valores {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .conteiner {
+        border-radius: 20px;
+        background-color: #FF7F00;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        
+            h3 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+       
+    }
+    
 }
