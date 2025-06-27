@@ -1,0 +1,95 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f2f2f2;
+}
+
+header {
+    padding: 20px;
+
+    .cbc {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        cursor: pointer;
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style: none;
+        width: 200px;
+    }
+     
+    hr {
+        margin-top: 10px;
+        background-color: red;
+    }
+}
+
+main {
+    justify-content: space-evenly;
+    display: flex;
+    img {
+        width: 25px;
+        cursor: pointer;
+    }
+
+    span {
+        color: purple;
+    }
+
+    button {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: blue;
+        border: none;
+        color: white;
+        width: 150px;
+    }
+
+    button:hover {
+        background-color: lightblue;
+        transition: .5s;
+    }
+
+    input {
+        font-size: 14px;
+        margin-top: 5px;
+        background-color: white;
+        padding: 10px;
+        height: 20px;
+        width: 300px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    span {
+        font-size: 18px;
+        background-color: white;
+    }
+
+    #number {
+        border-color: purple;
+    }
+
+    form {
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+
+        strong {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+    }
+}

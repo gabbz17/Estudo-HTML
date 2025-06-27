@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="cbc">
+                <h2>talentt</h2>
+
+                <ul>
+                    <li>Sobre a empresa</li>
+                    <li>Vagas</li>
+                    <details> 
+                        <summary>Português</summary>
+                        
+                    </details>
+                </ul>
+            </div>
+            
+
+            <hr>
+        </header>
+
+        <main>
+
+            <div id="sobre">
+
+                <label for="">Compartilhar vaga: </label>
+                <img src="icon/face.png" alt="">
+                <img src="icon/whats.png" alt="">
+                <img src="icon/linke.png" alt="">
+
+                <br>
+
+                <h1>Estágio Java - Home Office</h1>
+
+                <button> <img src="icon/local.png" alt=""> Remota | BR</button>
+
+            </div>
+
+            <div id="form">
+                <form action="" method="get">
+                    <label for="name"><strong>Nome completo <span>*</span></strong></label> <br>
+                    <input id="name" type="text" placeholder="Seu nome completo" name="name">
+
+                    <br><br>
+
+                    <label for="email"><strong>Seu melhor email <span>*</span></strong></label> <br>
+                    <input id="email" type="text" placeholder="Seu melhor email" name="email">
+
+                    <br><br>
+
+                    <label for="number"><strong>Celular com DDD <span>*</span></strong></label> <br>
+                    <input type="text" id="number" name="phone" minlength="10" maxlength="13">
+                    
+                    <br><br>
+
+                    <label for="linke"><strong>Linkedin <span>*</span></strong></label> <br>
+                    <input type="text" id="linke" name="linkedin" placeholder="https://linkedin.com/in/seu-perfil"> <br>
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">Obtenha o link do seu perfil do linkedin</a>
+
+                    <br><br>
+
+                    <label for=""><strong>País de origem <span>*</span></strong></label> <br>
+                    <input list="list" name="origem" placeholder="Selecione o país">
+                    <datalist id="list">
+                        <option value="Brasil">Brasil</option>
+                        <option value="Alemanha">Alemanha</option>
+                    </datalist>
+
+                    <br><br>
+
+                    <label for=""><strong>Currículo</strong></label> <br>
+                    <input type="file" name="curriculo">
+
+                    <br><br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Redefinir</button>
+
+                </form>
+                
+            </div>
+            
+        </main>
+        
+    </body>
+</html>
